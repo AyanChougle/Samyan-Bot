@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    border-bottom: 2px solid white;
+}
+
+.chat-btn {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #4a148c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.chat-btn:hover {
+    background: #ffd700;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 50px;
+    gap: 50px;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 400px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Chat Button */
+.btn {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #4a148c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffd700;
+    color: black;
+}
+
+
+.hero-image img {
+    width: 300px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}

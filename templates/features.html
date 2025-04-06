@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - SAMYAN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/features.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Samyan</h1>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('features') }}">Features</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+            <a href="{{ url_for('chatbot') }}" class="chat-btn">Chat with Samyan</a>
+        </nav>
+    </header>
+
+    <section class="features">
+        <h2>FEATURES</h2>
+        <div class="feature-container">
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='ASSETS/mood.jpg') }}" alt="Mood Enhancement">
+                <h3>Mood Enhancement</h3>
+                <p>Psykh has a unique set of conversation stories which helps in enhancing mood.</p>
+            </div>
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='ASSETS/Suggestions.jpg') }}" alt="Suggestions">
+                <h3>Suggestions</h3>
+                <p>Psykh has a built-in set of suggestions for users to serve whenever they are not feeling good.</p>
+            </div>
+            <div class="feature-card">
+                <img src="{{ url_for('static', filename='ASSETS/Storage and Analysis.jpg') }}" alt="Storage and Analysis">
+                <h3>Storage and Analysis</h3>
+                <p>This feature can be used to track users' conditions as well as store things users like the most.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

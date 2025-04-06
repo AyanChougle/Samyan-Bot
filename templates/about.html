@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Samyan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Samyan</h1>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('features') }}">Features</a></li>
+                <li><a href="{{ url_for('about') }}" class="active">About</a></li>
+            </ul>
+            <a href="{{ url_for('chatbot') }}" class="chat-btn">Chat with Samyan</a>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h2>ABOUT</h2>
+        <div class="underline"></div>
+        <div class="about-content">
+            <div class="about-text">
+                <p><em>Mental disorders are usually treated by pharmacotherapy or psychotherapy. However, there is a global shortage of human resources for delivering such mental health services. In developed countries there are nine psychiatrists per 100,000 people available, while in developing countries there is one psychiatrist per ten million people.</em></p>
+                <p><em>To address this problem, conversational agents have arisen interest in recent years, particularly in psychoeducation, behaviour change and self-help. Samyan is a rasa based conversational chatbot developed with help of cognitive behavioural therapy with a view of helping people tackle their daily mental issues. Samyan helps user to deal with issues such as Anxiety, Depression, getting rid of sad thoughts, etc.</em></p>
+                <p><em>Samyan uses natural language understanding to converse with user. It also maintain a journal to track the progress of users condition. Samyan also provides the user with comfort and suggestion for dealing with the issues they are facing.</em></p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='ASSETS/about-illustration.png') }}" alt="About Samyan Illustration">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Ayan, Rohit, Vipraj and Roshan with ❤️</p>
+    </footer>
+</body>
+</html>

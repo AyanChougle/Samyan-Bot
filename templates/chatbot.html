@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat with Samyan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Samyan</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('features') }}">Features</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+      </ul>
+      <a href="{{ url_for('chatbot') }}" class="chat-btn">Chat with Samyan</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="chatbot-container">
+      <div class="chat-header">Chat with Samyan</div>
+      <div class="chat-window" id="chat-window"></div>
+      <div class="chat-input-area">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
