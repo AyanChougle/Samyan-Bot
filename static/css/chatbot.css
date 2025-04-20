@@ -149,4 +149,37 @@
   .chat-input-area button:hover {
     background: #6a1b9a;
   }
-  
+/* Typing indicator animation */
+.dot-flashing {
+  position: relative;
+  width: 40px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+.dot-flashing::before,
+.dot-flashing::after,
+.dot-flashing span {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #999;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+  margin: 0 2px;
+}
+
+.dot-flashing::after {
+  animation-delay: 0.2s;
+}
+
+.dot-flashing span {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
